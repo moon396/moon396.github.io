@@ -1,0 +1,66 @@
+body {
+    font-family: 'Arial', sans-serif; /* 모바일 최적화 폰트 */
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 16px; /* 모바일 기기에 적합한 기본 폰트 크기 */
+}
+
+.container {
+    width: 100%; /* 전체 너비 사용 */
+    max-width: 600px; /* 최대 너비 설정 */
+    margin: 0 auto; /* 중앙 정렬 */
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px; /* 대제목 크기 */
+    text-align: center;
+    margin-bottom: 10px; /* 간격 조절 */
+}
+
+.tabs {
+    display: flex; /* 탭을 행으로 표시 */
+    background-color: #fff; /* 배경색 설정 */
+    border-bottom: 1px solid #ccc; /* 하단 경계선 추가 */
+    overflow-x: auto; /* 가로 스크롤 가능 */
+}
+
+.tab-link {
+    flex-grow: 1; /* 모든 탭이 동일한 너비를 가지도록 설정 */
+    padding: 12px 0; /* 패딩 설정 */
+    text-align: center;
+    background-color: transparent; /* 배경색 투명 */
+    color: black; /* 글자색 설정 */
+    font-size: 17px; /* 탭 폰트 크기 */
+    border: none; /* 경계선 제거 */
+    cursor: pointer;
+    font-weight: bold; /* 텍스트 볼드 처리 */
+    position: relative; /* 위치 설정 */
+}
+
+.tab-link.active {
+    border-bottom: 3px solid black; /* 클릭된 탭 아래에 두꺼운 선 추가 (블랙으로 변경) */
+}
+
+.tab-link:hover {
+    background-color: #f1f1f1; /* 호버 시 배경색 변경 */
+}
+
+.content {
+    display: none; /* 기본적으로 내용 숨기기 */
+    padding: 15px;
+    text-align: left;
+    background-color: #fff; /* 배경색 설정 */
+}
+
+.content img {
+    width: 100%; /* 이미지 너비를 컨테이너에 맞춤 */
+    height: auto; /* 이미지 높이 자동 조절 */
+    margin-top: 15px; /* 상단 간격 설정 */
+}
+
+.content.active {
+    display: block; /* 활성화된 내용 표시 */
+}

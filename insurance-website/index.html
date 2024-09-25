@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[차팀장] 다이렉트 보험 이용안내</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 대제목 -->
+        <h1>[차팀장] 다이렉트 보험 이용안내</h1>
+
+        <!-- 소제목 (탭) -->
+        <div class="tabs">
+            <button class="tab-link active" onclick="showContent('internet')">인터넷, 전화</button>
+            <button class="tab-link" onclick="showContent('auto-ars')">오토 ARS</button>
+            <button class="tab-link" onclick="showContent('consultant')">전문 상담원</button>
+        </div>
+
+        <!-- 각 소제목에 따른 내용 -->
+        <div id="content-area">
+            <!-- 인터넷, 전화 -->
+            <div id="internet" class="content" style="display: block;">
+                <img src="images/internet-image.jpg" alt="인터넷, 전화 이미지">
+            </div>
+
+            <!-- 오토 ARS -->
+            <div id="auto-ars" class="content" style="display:none;">
+                <img src="images/auto-ars-image.jpg" alt="오토 ARS 이미지">
+            </div>
+
+            <!-- 전문 상담원 -->
+            <div id="consultant" class="content" style="display:none;">
+                <img src="images/consultant-image.jpg" alt="전문 상담원 이미지">
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
